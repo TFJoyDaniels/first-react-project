@@ -11,9 +11,15 @@ function Testimonio(props)
         alt='Emma img'
       />
       <div className='text-container'>
-        <p className='name'>{props.name} en {props.country}</p>
-        <p className='profession'>{props.profession} en {props.enterprise}</p>
-        <p className='text'>"{props.testimony}"</p>
+        <p className='name'>
+          <strong>{props.name}</strong> en {props.country}
+        </p>
+        <p className='profession'>
+          {props.profession} en <strong>{props.enterprise}</strong>
+        </p>
+        <p className='text'>
+          "{props.testimony}"
+        </p>
       </div>
     </div>
   );  
